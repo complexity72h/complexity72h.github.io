@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>2018 - COMPLEXITY72H</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1668162930" title="wsite-theme-css" />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='http://cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Montserrat" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#9b9b9b !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Montserrat" !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#363b3e !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Montserrat" !important;font-weight:700 !important;letter-spacing: -3px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Lora" !important;font-weight:400 !important;letter-spacing: 0px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:18px !important;line-height:32px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:80px !important;line-height:78px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:90px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:22px !important;line-height:34px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/it/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "ES";
+			_W.storeCurrency = "EUR";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "339611388963197524";
+			com_userID = "12602466";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/it/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"275074806517065003","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"548220202802210504","title":"Program","url":"program.html","target":"","nav_menu":false,"nonclickable":false},{"id":"967747394534134773","title":"Tutors","url":"tutors.html","target":"","nav_menu":false,"nonclickable":false},{"id":"645339988329292157","title":"Venue","url":"venue.html","target":"","nav_menu":false,"nonclickable":false},{"id":"624195210899801243","title":"Apply","url":"apply.html","target":"","nav_menu":false,"nonclickable":false},{"id":"137343607392973773","title":"About Us","url":"about-us.html","target":"","nav_menu":false,"nonclickable":false},{"id":"633203709368700196","title":"2020","url":"2020.html","target":"","nav_menu":false,"nonclickable":false},{"id":"269677125227109646","title":"2019","url":"2019.html","target":"","nav_menu":false,"nonclickable":false},{"id":"745569348611668441","title":"2018","url":"2018.html","target":"","nav_menu":false,"nonclickable":false}],
+			"745569348611668441",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-page-2018  full-width-body-off header-overlay-on alt-nav-off  wsite-theme-light"><div class="wrapper">
+    <div class="birdseye-header">
+      <div class="nav-wrap">
+        <div class="container">
+          <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">COMPLEXITY72H</span>
+	
+	</a>
+
+</span></div>
+          <div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="pg275074806517065003" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg548220202802210504" class="wsite-menu-item-wrap">
+			<a
+						href="program.html"
+				class="wsite-menu-item"
+				>
+				Program
+			</a>
+			
+		</li>
+		<li id="pg967747394534134773" class="wsite-menu-item-wrap">
+			<a
+						href="tutors.html"
+				class="wsite-menu-item"
+				>
+				Tutors
+			</a>
+			
+		</li>
+		<li id="pg645339988329292157" class="wsite-menu-item-wrap">
+			<a
+						href="venue.html"
+				class="wsite-menu-item"
+				>
+				Venue
+			</a>
+			
+		</li>
+		<li id="pg624195210899801243" class="wsite-menu-item-wrap">
+			<a
+						href="apply.html"
+				class="wsite-menu-item"
+				>
+				Apply
+			</a>
+			
+		</li>
+		<li id="pg137343607392973773" class="wsite-menu-item-wrap">
+			<a
+						href="about-us.html"
+				class="wsite-menu-item"
+				>
+				About Us
+			</a>
+			
+		</li>
+		<li id="pg633203709368700196" class="wsite-menu-item-wrap">
+			<a
+						href="2020.html"
+				class="wsite-menu-item"
+				>
+				2020
+			</a>
+			
+		</li>
+		<li id="pg269677125227109646" class="wsite-menu-item-wrap">
+			<a
+						href="2019.html"
+				class="wsite-menu-item"
+				>
+				2019
+			</a>
+			
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="2018.html"
+				class="wsite-menu-item"
+				>
+				2018
+			</a>
+			
+		</li>
+</ul>
+</div>
+          <label class="hamburger"><span></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-16"  >
+		<div class="wsite-section-content">
+          <div class="container">
+			<div class="wsite-section-elements">
+				<h2 class="wsite-content-title" style="text-align:center;"><font size="6">Complexity72h Workshop 2018 (07-11 May 2018, IMT Lucca, Italy)</font></h2>
+
+<div class="paragraph" style="text-align:center;"><strong style="color:rgb(155, 155, 155)"><font color="#2a2a2a" size="6">72 hours preprints</font></strong></div>
+
+<div class="paragraph"><ul style="color:rgb(155, 155, 155)"><li><strong>Altered modularity and disproportional integration in functional networks are markers of abnormal brain organization in schizophrenia&nbsp;</strong><a href="https://arxiv.org/abs/1805.04329" target="_blank"><font color="#5040ae">arXiv</font></a><br /><font size="2">(Cinelli, Echegoyen, Oliveira, Orellana, Gili)</font></li><li><strong>Dynamics of new strain emergence on a temporal network&nbsp;</strong><a href="https://arxiv.org/abs/1805.04343" target="_blank"><font color="#5040ae">arXiv</font></a><br /><font size="2">(Chakraborty, Hoffmann, Leguia, Nolet, Ortiz, Prunas, Zavojanni, Valdano, Poletto)</font></li><li><strong>Maximum entropy approach to link prediction in bipartite networks&nbsp;</strong><a href="https://arxiv.org/abs/1805.04307" target="_blank"><font color="#5040ae">arXiv</font></a><br /><font size="2">(Baltakiene, Baltakys, Cardamone, Parisi, Radicioni, Torricelli, van Lidth de Jeude, Saracco)</font></li><li><strong>Network-based indicators of Bitcoin bubbles&nbsp;</strong><a href="https://arxiv.org/abs/1805.04460" target="_blank"><font color="#5040ae">arXiv</font></a><br /><font size="2">(Bovet, Campajola, Lazo, Mottes, Pozzana, Restocchi, Saggese, Vallarano, Squartini, Tessone)</font></li><li><strong>Network sensitivity on systemic risk&nbsp;</strong><a href="https://arxiv.org/abs/1805.04325" target="_blank"><font color="#5040ae">arXiv</font></a><br /><font size="2">(Di Gangi, Lo Sardo, Macchiati, Minh, Pinotti, Ramadiah, Wilinski, Cimini)</font></li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:center;"><font size="7">program</font></h2>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/2/6/0/12602466/def-program_1.jpg" alt="Foto" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:center;"><font size="6">lecturers &amp; tutors</font></h2>
+
+<div><div id="808411296255687304" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div>
+    <div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+        <table class="wsite-multicol-table">
+            <tbody class="wsite-multicol-tbody">
+                <tr class="wsite-multicol-tr">
+
+                    <!-- begin:caldarelli -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">GUIDO CALDARELLI</font> <font size="2" style="font-style:italic;">lecturer</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_caldarelli.png" alt="Caldarelli" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3" style="line-height:1% !important;">Guido Caldarelli is full professor of physics at IMT Lucca, and LIMS fellow. He is vice-president of the Complex Systems Society, and in the board of the statistical and nonlinear physics division of the European Physical Society.&nbsp;His research interests involve structure of networks, financial networks, and multiplex networks.​<br><a href="http://www.guidocaldarelli.com/index.php" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:caldarelli -->
+
+                    <!-- begin:giannotti -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">FOSCA GIANNOTTI</font> <font size="2" style="font-style:italic;">lecturer</font></strong></h2>
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_giannotti.png" alt="Giannotti" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><span style="color:rgb(131, 147, 156)"><font size="3">Fosca Giannotti is a senior researcher at the Information Science and Technology Institute of the National Research Council at Pisa, Italy, where she leads the Knowledge Discovery and Data Mining Laboratory.&nbsp;Her current research interests include data mining query languages, knowledge discovery support environment, web-mining, spatio-temporal reasoning, spatio-temporal data mining, and privacy preserving data mining.</span><br><a href="http://kdd.isti.cnr.it/people/giannotti-fosca" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:giannotti -->
+
+                    <!-- begin:poletto -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">CHIARA POLETTO</font> <font size="2" style="font-style:italic;">lecturer</font></strong></h2>
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_poletto.png" alt="Poletto" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><span style="color:rgb(131, 147, 156)"><font size="3">Chiara Poletto is a researcher at INSERM (French National Institute of Health and Medical Research). She studies emerging pathogens and disease ecology. She applies network physics and complex system approaches to reach a theoretical understanding of the interplay between human behaviour and infection propagation, using data-driven computational models. Her goal is to provide a quantitative assessment forecast of the epidemic evolution.</span><br><a href="http://chiara-poletto.weebly.com/" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:poletto -->
+
+
+
+                </tr>
+                <!-- NEW ROW -->
+                <tr class="wsite-multicol-tr">   
+
+                    <!-- begin:tessone -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">CLAUDIO J. TESSONE</font> <font size="2" style="font-style:italic;">lecturer</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_tessone.png" alt="Tessone" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Claudio J. Tessone is assistant professor at the Dept of Business Administration of the University of Zurich. He applies network analysis to socio-economical systems.​<br><a href="https://www.business.uzh.ch/en/professorships/networkscience.html" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:tessone -->
+
+                    <!-- begin:cimini -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">GIULIO CIMINI</font> <font size="2" style="font-style:italic;">tutor</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_cimini.png" alt="Cimini" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Giulio Cimini is assistant professor in Quantitative Analysis and Modeling of Complex Economical and Financial Systems at IMT Lucca.​<br><a href="https://www.imtlucca.it/giulio.cimini" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:cimini -->
+
+                    <!-- begin:facchini -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">ANGELO FACCHINI</font> <font size="2" style="font-style:italic;">tutor</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_facchini.png" alt="Facchini" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Angelo Facchini is Assistant Professor at IMT Lucca. His research interests are in the field of nonlinear time series analysis, complex systems and data science with applications to biophysical phenomena, markets, infrastructural water and energy networks, urban sustainability, and megacities.​<br><a href="https://www.researchgate.net/profile/Angelo_Facchini" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:facchini -->
+
+                </tr>
+                <!-- NEW ROW -->
+                <tr class="wsite-multicol-tr">
+                    
+                    <!-- begin:gili -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">TOMMASO GILI</font> <font size="2" style="font-style:italic;">tutor</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_gili.png" alt="Gili" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Tommaso Gili currently works at the NETWORKS Complex Networks Research Unit, IMT School for Advanced Studies Lucca. Tommaso does research in Polymer Chemistry, Physical Chemistry and Biophysics.<br><a href="https://www.researchgate.net/profile/Tommaso_Gili" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:gili -->
+                    
+                    <!-- begin:saracco -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong style="line-height:50%"><font size="5">FABIO SARACCO</font> <font size="2" style="font-style:italic;">tutor</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_saracco.png" alt="Saracco" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Fabio Saracco is assistant professor at IMT Lucca, since October 2015, when he joined the NETWORKS research unit.​<br><a href="https://www.imtlucca.it/fabio.saracco" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:saracco -->
+
+
+                </tr>
+
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+<!-- begin:placeholder 
+<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+<h2 class="wsite-content-title" style="text-align:center;"><strong><font size="5">MORE TO COME</font></strong></h2>
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="./files/theme/images/people_placeholder.png" alt="Placeholder" style="width:auto;max-width:100%">
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+<div class="paragraph"><span style="color:rgb(131, 147, 156)"><font size="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet volutpat felis. Sed a mollis arcu. Vivamus lectus elit, tempus et diam volutpat, pharetra semper tellus. Vivamus ac tellus tempus, gravida enim sed, rutrum quam. Fusce in vehicula nunc. Sed maximus, purus sit amet porttitor ornare, neque felis eleifend nisl, at fermentum lacus est a dui. In non urna accumsan, sagittis nulla eget, pulvinar lectus. Sed convallis sit amet dui sit amet facilisis.</span><br><a href="#" target="_blank">website</a></font></div>
+</td>
+end:placeholder --></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title" style="text-align:center;"><font size="6">lectures &amp; tutorials</font></h2>
+
+<div class="paragraph" style="text-align:left;"><strong><font color="#3f3f3f"><font size="5">Fosca Giannotti </font><font size="4">(lecture)</font></font></strong><br /><strong><em><font color="#2a2a2a">Big Data for understanding human dynamics: t<span>he power of networks</span></font></em></strong><br /><font color="#2a2a2a">&#8203;</font><br /><strong style="color:rgb(63, 63, 63)"><font size="5">Claudio Tessone&nbsp;</font></strong><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="4">(lecture)</font></font></strong><br /><strong><em><span style="color:rgb(69, 69, 69)">A complex systems perspective to blockchain-based systems</span></em></strong><br /><br /><font color="#3f3f3f" size="5"><strong>Chiara Poletto&nbsp;</strong></font><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="4">(lecture)</font></font></strong><br /><strong style="color:rgb(155, 155, 155)"><em><span style="color:rgb(33, 33, 33)">Introduction to network epidemiology</span></em></strong><br /><br /><strong style="color:rgb(63, 63, 63)"><font size="5">Guido Caldarelli&nbsp;</font></strong><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="4">(lecture)</font></font></strong><br /><strong style="color:rgb(155, 155, 155)"><font color="#212121"><em>Application of statistical physics to finance</em></font><br /><br /><font color="#3f3f3f"><font size="5">Paolo Barucca</font> (tutorial)</font></strong><br /><strong style="color:rgb(155, 155, 155)"><em><font color="#2a2a2a">Network models of systemic risk</font></em></strong><br /><br /><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="5">Marcos Oliveira</font> (tutorial)</font></strong><br /><em style="color:rgb(155, 155, 155)"><strong style="color:rgb(34, 34, 34)">Performing embarrassingly parallel data analysis in Python using IPyparallel and Pandas</strong></em><br /><br /><font color="#2a2a2a"><font size="5">&#8203;</font></font><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="5">Ruggiero Lo Sardo</font> (tutorial)<br /><em>Web visualization of small scale complex networks</em></font></strong><br /><br /><font color="#2a2a2a" size="5">&#8203;</font><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="5">Alexandre Bovet</font> (tutorial)</font></strong><br /><strong style="color:rgb(155, 155, 155)"><em><font color="#2a2a2a">Uncovering memory patterns in temporal networks&nbsp;with higher-order Markov models</font></em></strong><br /><br /><font color="#2a2a2a"><font size="5">&#8203;</font></font><strong style="color:rgb(155, 155, 155)"><font color="#3f3f3f"><font size="5">Tommaso Radicioni</font> (tutorial)</font></strong><br /><em style="color:rgb(155, 155, 155)"><strong><span style="color:rgb(34, 34, 34)">How to use Gephi? A short introduction to network analysis and visualization</span></strong></em></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:center;"><font size="6">organizers</font></h2>
+
+<div><div id="476701852867704202" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div>
+    <div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+        <table class="wsite-multicol-table">
+            <tbody class="wsite-multicol-tbody">
+                <tr class="wsite-multicol-tr">
+                    
+                    <!-- begin:antonioni -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong><font size="5">ALBERTO ANTONIONI</font></strong></h2>
+
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_albertoni.jpg" alt="Antonioni" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><font size="3">Alberto is a mathematician working on evolutionary game theory and experimental economics. He is now a postdoctoral research fellow at University College London.​<br><a href="https://sites.google.com/site/antonionialberto/home" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:antonioni -->
+                    
+                    <!-- begin:squartini -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong><font size="5">TIZIANO SQUARTINI</font></strong></h2>
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_squartini.png" alt="Squartini" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><span style="color:rgb(131, 147, 156)"><font size="3">Tiziano is a physicist, working since November 2015 as Assistant Professor at the IMT School for Advanced Studies Lucca (within the NETWORKS Research Unit). His research activity mainly focuses on statistical mechanics of networks.</span><br><a href="https://www.imtlucca.it/tiziano.squartini" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:squartini -->
+                    
+                    <!-- begin:valdano -->
+                    <td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+                        <h2 class="wsite-content-title" style="text-align:center;"><strong><font size="5">EUGENIO VALDANO</font></strong></h2>
+                        <div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+                            <a>
+                                <img src="./files/theme/images/people_valdano.png" alt="Valdano" style="width:auto;max-width:100%">
+                            </a>
+                            <div style="display:block;font-size:90%"></div>
+                            </div></div>
+                        <div class="paragraph"><span style="color:rgb(131, 147, 156)"><font size="3">Eugenio is a postdoc at URV in Tarragona, Spain. He is a physicist and epidemiologist. He works in infectious disease modeling.</span><br><a href="https://eugenio-valdano.github.io/index.html" target="_blank">website</a></font></div>
+                    </td>
+                    <!-- end:valdano -->
+                    
+                </tr>
+                <!-- NEW ROW -->
+                <tr class="wsite-multicol-tr">        
+                
+                </tr>
+                
+                
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:center;"><font size="6">supporters</font></h2>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:left">
+<a href='https://www.imtlucca.it/' target='_blank'>
+<img src="uploads/1/2/6/0/12602466/logo-imt-eng-orizz-blu-ritagliato_1.jpg" alt="Foto" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:right">
+<a href='http://openmaker.eu/' target='_blank'>
+<img src="uploads/1/2/6/0/12602466/openmaker-logo_1.png" alt="Foto" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='http://sobigdata.eu/' target='_blank'>
+<img src="uploads/1/2/6/0/12602466/sobigdata-logo_2.png" alt="Foto" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="footer-wrap">
+      <div class="container">
+        <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+      </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+  </div><!-- /.wrapper -->
+
+  <div id="navMobile" class="nav mobile-nav">
+    <label class="hamburger"><span></span></label>
+    <ul class="wsite-menu-default">
+    		<li id="pg275074806517065003" class="wsite-menu-item-wrap">
+    			<a
+    						href="index.html"
+    				class="wsite-menu-item"
+    				>
+    				Home
+    			</a>
+    			
+    		</li>
+    		<li id="pg548220202802210504" class="wsite-menu-item-wrap">
+    			<a
+    						href="program.html"
+    				class="wsite-menu-item"
+    				>
+    				Program
+    			</a>
+    			
+    		</li>
+    		<li id="pg967747394534134773" class="wsite-menu-item-wrap">
+    			<a
+    						href="tutors.html"
+    				class="wsite-menu-item"
+    				>
+    				Tutors
+    			</a>
+    			
+    		</li>
+    		<li id="pg645339988329292157" class="wsite-menu-item-wrap">
+    			<a
+    						href="venue.html"
+    				class="wsite-menu-item"
+    				>
+    				Venue
+    			</a>
+    			
+    		</li>
+    		<li id="pg624195210899801243" class="wsite-menu-item-wrap">
+    			<a
+    						href="apply.html"
+    				class="wsite-menu-item"
+    				>
+    				Apply
+    			</a>
+    			
+    		</li>
+    		<li id="pg137343607392973773" class="wsite-menu-item-wrap">
+    			<a
+    						href="about-us.html"
+    				class="wsite-menu-item"
+    				>
+    				About Us
+    			</a>
+    			
+    		</li>
+    		<li id="pg633203709368700196" class="wsite-menu-item-wrap">
+    			<a
+    						href="2020.html"
+    				class="wsite-menu-item"
+    				>
+    				2020
+    			</a>
+    			
+    		</li>
+    		<li id="pg269677125227109646" class="wsite-menu-item-wrap">
+    			<a
+    						href="2019.html"
+    				class="wsite-menu-item"
+    				>
+    				2019
+    			</a>
+    			
+    		</li>
+    		<li id="active" class="wsite-menu-item-wrap">
+    			<a
+    						href="2018.html"
+    				class="wsite-menu-item"
+    				>
+    				2018
+    			</a>
+    			
+    		</li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>
