@@ -67,7 +67,7 @@
 }
 
 .u-section-2 .u-text-3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
 }
 
@@ -433,16 +433,15 @@
 
 .u-section-5 .u-text-2 {
   letter-spacing: 0px;
-  width: 210px;
   font-weight: 700;
-  margin: 0 auto;
+  margin: 37px 0 0;
 }
 
 .u-section-5 .u-text-3 {
-  width: 210px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 20px auto 0;
+  width: 210px;
+  margin: 27px auto 0;
 }
 
 .u-section-5 .u-layout-cell-2 {
@@ -451,17 +450,16 @@
 }
 
 .u-section-5 .u-text-4 {
-  letter-spacing: 0;
-  width: 210px;
+  letter-spacing: 0px;
   font-weight: 700;
-  margin: 25px auto 0;
+  margin: 37px 0 0;
 }
 
 .u-section-5 .u-text-5 {
-  width: 210px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 20px auto 25px;
+  width: 210px;
+  margin: 27px auto 0;
 }
 
 .u-section-5 .u-layout-cell-3 {
@@ -472,14 +470,13 @@
 .u-section-5 .u-text-6 {
   letter-spacing: 0px;
   font-weight: 700;
-  width: 210px;
-  margin: 37px auto 0;
+  margin: 37px 0 0;
 }
 
 .u-section-5 .u-text-7 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 20px 15px 0;
+  margin: 27px 15px 0;
 }
 
 .u-section-5 .u-layout-cell-4 {
@@ -490,15 +487,14 @@
 .u-section-5 .u-text-8 {
   letter-spacing: 0px;
   font-weight: 700;
-  width: 210px;
-  margin: 37px auto 0;
+  margin: 37px 0 0;
 }
 
 .u-section-5 .u-text-9 {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 210px;
-  margin: 20px auto 0;
+  margin: 27px auto 0;
 }
 
 @media (max-width: 1199px) {
@@ -634,19 +630,27 @@
 
 @media (max-width: 575px) {
   .u-section-5 .u-text-2 {
-    width: 104px;
+    width: 156px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-5 .u-text-3 {
     width: 104px;
+    margin-top: 29px;
   }
 
   .u-section-5 .u-text-4 {
-    width: 104px;
+    width: 156px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-5 .u-text-5 {
     width: 104px;
+    margin-top: 29px;
   }
 
   .u-section-5 .u-layout-cell-3 {
@@ -654,7 +658,9 @@
   }
 
   .u-section-5 .u-text-6 {
-    width: 104px;
+    width: 156px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-5 .u-text-7 {
@@ -667,11 +673,15 @@
   }
 
   .u-section-5 .u-text-8 {
-    width: 104px;
+    width: auto;
+    margin-top: 34px;
+    margin-right: 105px;
+    margin-left: 92px;
   }
 
   .u-section-5 .u-text-9 {
     width: 131px;
+    margin-top: 29px;
   }
 } .u-section-6 {
   background-image: none;
