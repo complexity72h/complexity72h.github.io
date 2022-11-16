@@ -1041,12 +1041,12 @@
   font-size: 2.25rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 198px 20px 0 0;
+  margin: 198px 57px 0 -36px;
 }
 
 .u-section-7 .u-text-2 {
   font-size: 1.5rem;
-  margin: 20px 20px 0 0;
+  margin: 17px 57px 0 -36px;
 }
 
 .u-section-7 .u-layout-cell-2 {
@@ -1087,10 +1087,12 @@
 
   .u-section-7 .u-text-1 {
     margin-right: 0;
+    margin-left: 0;
   }
 
   .u-section-7 .u-text-2 {
     margin-right: 0;
+    margin-left: 0;
   }
 
   .u-section-7 .u-text-3 {
