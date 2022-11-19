@@ -38379,6 +38379,10 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: 20px 0 0 auto;
 }
 
+.u-header .u-nav-1 {
+  font-weight: 700;
+}
+
 .u-header .u-nav-2 {
   font-size: 1.25rem;
 }
