@@ -27,9 +27,10 @@
 }
 
 .u-section-1 .u-image-1 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-2 {
@@ -45,9 +46,10 @@
 }
 
 .u-section-1 .u-image-2 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-4 {
@@ -75,7 +77,7 @@
 }
 
 .u-section-1 .u-image-3 {
-  height: 213px;
+  height: 582px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -93,7 +95,7 @@
 }
 
 .u-section-1 .u-image-4 {
-  height: 213px;
+  height: 582px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -123,9 +125,10 @@
 }
 
 .u-section-1 .u-image-5 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-10 {
@@ -141,9 +144,10 @@
 }
 
 .u-section-1 .u-image-6 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-12 {
@@ -171,9 +175,10 @@
 }
 
 .u-section-1 .u-image-7 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-14 {
@@ -189,9 +194,10 @@
 }
 
 .u-section-1 .u-image-8 {
-  height: 213px;
+  height: 581px;
   margin-top: 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .u-section-1 .u-text-16 {
@@ -219,14 +225,6 @@
     min-height: 676px;
   }
 
-  .u-section-1 .u-image-1 {
-    height: 171px;
-  }
-
-  .u-section-1 .u-image-2 {
-    height: 171px;
-  }
-
   .u-section-1 .u-list-2 {
     margin-right: initial;
     margin-left: initial;
@@ -237,11 +235,11 @@
   }
 
   .u-section-1 .u-image-3 {
-    height: 171px;
+    height: 468px;
   }
 
   .u-section-1 .u-image-4 {
-    height: 171px;
+    height: 468px;
   }
 
   .u-section-1 .u-list-3 {
@@ -253,14 +251,6 @@
     min-height: 676px;
   }
 
-  .u-section-1 .u-image-5 {
-    height: 171px;
-  }
-
-  .u-section-1 .u-image-6 {
-    height: 171px;
-  }
-
   .u-section-1 .u-list-4 {
     margin-right: initial;
     margin-left: initial;
@@ -268,14 +258,6 @@
 
   .u-section-1 .u-repeater-4 {
     min-height: 676px;
-  }
-
-  .u-section-1 .u-image-7 {
-    height: 171px;
-  }
-
-  .u-section-1 .u-image-8 {
-    height: 171px;
   }
 }
 
@@ -296,48 +278,24 @@
     min-height: 841px;
   }
 
-  .u-section-1 .u-image-1 {
-    height: 275px;
-  }
-
-  .u-section-1 .u-image-2 {
-    height: 275px;
-  }
-
   .u-section-1 .u-repeater-2 {
     grid-template-columns: 100%;
   }
 
   .u-section-1 .u-image-3 {
-    height: 275px;
+    height: 753px;
   }
 
   .u-section-1 .u-image-4 {
-    height: 275px;
+    height: 753px;
   }
 
   .u-section-1 .u-repeater-3 {
     grid-template-columns: 100%;
   }
 
-  .u-section-1 .u-image-5 {
-    height: 275px;
-  }
-
-  .u-section-1 .u-image-6 {
-    height: 275px;
-  }
-
   .u-section-1 .u-repeater-4 {
     grid-template-columns: 100%;
-  }
-
-  .u-section-1 .u-image-7 {
-    height: 275px;
-  }
-
-  .u-section-1 .u-image-8 {
-    height: 275px;
   }
 }
 
@@ -358,17 +316,9 @@
     padding-right: 10px;
   }
 
-  .u-section-1 .u-image-1 {
-    height: 217px;
-  }
-
   .u-section-1 .u-container-layout-2 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .u-section-1 .u-image-2 {
-    height: 217px;
   }
 
   .u-section-1 .u-container-layout-3 {
@@ -377,7 +327,7 @@
   }
 
   .u-section-1 .u-image-3 {
-    height: 217px;
+    height: 593px;
   }
 
   .u-section-1 .u-container-layout-4 {
@@ -386,7 +336,7 @@
   }
 
   .u-section-1 .u-image-4 {
-    height: 217px;
+    height: 593px;
   }
 
   .u-section-1 .u-container-layout-5 {
@@ -394,17 +344,9 @@
     padding-right: 10px;
   }
 
-  .u-section-1 .u-image-5 {
-    height: 217px;
-  }
-
   .u-section-1 .u-container-layout-6 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .u-section-1 .u-image-6 {
-    height: 217px;
   }
 
   .u-section-1 .u-container-layout-7 {
@@ -412,17 +354,9 @@
     padding-right: 10px;
   }
 
-  .u-section-1 .u-image-7 {
-    height: 217px;
-  }
-
   .u-section-1 .u-container-layout-8 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .u-section-1 .u-image-8 {
-    height: 217px;
   }
 }
 
@@ -438,36 +372,12 @@
     margin-left: initial;
   }
 
-  .u-section-1 .u-image-1 {
-    height: 134px;
-  }
-
-  .u-section-1 .u-image-2 {
-    height: 134px;
-  }
-
   .u-section-1 .u-image-3 {
-    height: 134px;
+    height: 365px;
   }
 
   .u-section-1 .u-image-4 {
-    height: 134px;
-  }
-
-  .u-section-1 .u-image-5 {
-    height: 134px;
-  }
-
-  .u-section-1 .u-image-6 {
-    height: 134px;
-  }
-
-  .u-section-1 .u-image-7 {
-    height: 134px;
-  }
-
-  .u-section-1 .u-image-8 {
-    height: 134px;
+    height: 365px;
   }
 } .u-section-2 {
   background-image: none;
