@@ -165,6 +165,11 @@
   margin: 20px 16px 0;
 }
 
+.u-section-3 .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-3 .u-layout-cell-2 {
   min-height: 1084px;
 }
@@ -179,7 +184,7 @@
   margin: 0 10px;
 }
 
-.u-section-3 .u-btn-1 {
+.u-section-3 .u-btn-2 {
   background-image: none;
   padding: 0;
 }
