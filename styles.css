@@ -3,6 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: xx-large;
+    font-weight: bold;
     font-family: Arial, sans-serif;
     background-color: lightgray;
     color: black;
