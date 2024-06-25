@@ -4,8 +4,8 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #282c34;
-    color: white;
+    background-color: lightgray;
+    color: black;
     margin: 0;
 }
 
