@@ -14,3 +14,9 @@ body {
 #countdown {
     font-size: 3em;
 }
+
+#toggle-music {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
